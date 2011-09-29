@@ -10,9 +10,9 @@ This is an enhanced class based on `MultiWidget` that lets you control the rende
     class AddressWidget(MultiWidgetLayout):
         def __init__(self, attrs=None):
             layout = [ 
-                "<label for='%(id)s'>Street:</label>", 'street',
-                "<label for='%(id)s'>Number:</label>", 'number',
-                "<label for='%(id)s'>Zip Code:</label>", 'zipcode'
+                "<label for='%(id)s'>Street:</label>", TextInput()
+                "<label for='%(id)s'>Number:</label>", TextInput(),
+                "<label for='%(id)s'>Zip Code:</label>", TextInput()
             ]
             super(AddressWidget, self).__init__(layout, attrs)
 
@@ -24,11 +24,11 @@ This is an enhanced class based on `MultiWidget` that lets you control the rende
 This is what you get:
 
     <label for='id_address_field_0'>Street:</label>
-    <input id="id_address_field_0" type="text" name="test_field3_0" class="addresswidget" />
+    <input id="id_address_field_0" type="text" name="address_field_0" class="addresswidget" />
     <label for='id_address_field_1'>Number:</label>
-    <input id="id_address_field_1" type="text" name="test_field3_1" class="addresswidget" />
+    <input id="id_address_field_1" type="text" name="address_field_1" class="addresswidget" />
     <label for='id_address_field_2'>Zip Code:</label>
-    <input id="id_address_field_2" type="text" name="test_field3_2" class="addresswidget" />
+    <input id="id_address_field_2" type="text" name="address_field_2" class="addresswidget" />
 
 Compared to `MultiWidget`, the differences are:
 
