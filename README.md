@@ -31,9 +31,10 @@ This is what you get:
     <input id="id_address_field_2" type="text" name="test_field3_2" class="addresswidget" />
 
 Compared to `MultiWidget`, the differences are:
+
 * `widgets` parameter no longer exists.
 * `layout` The layout is a list of the fields that will be rendered. If the string is one of the keys in `widgets` dictionary, that will be replaced by the html rendered by that widget. Otherwise your string will be formatted using the class `attrs`.
 
 ## Bugs or Suggestions
 
-This is an experiment to improve the rendering of MultiWidgets. I have openned a ticket in Django to see if the concept is accepted, meanwhile you can use this. If you have suggestions or you come across bugs, please open an issue.
+This is an experiment to improve the rendering of MultiWidgets. I have openned <a href="https://code.djangoproject.com/ticket/16959">a ticket in Django (#16959)</a> to see if the concept is accepted, meanwhile you can use this. If you have suggestions or you come across bugs, please open an issue.
