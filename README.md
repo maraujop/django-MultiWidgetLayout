@@ -33,7 +33,7 @@ This is what you get:
 Compared to `MultiWidget`, the differences are:
 
 * `widgets` parameter no longer exists.
-* `layout` The layout is a list of the fields that will be rendered. If the string is one of the keys in `widgets` dictionary, that will be replaced by the html rendered by that widget. Otherwise your string will be formatted using the class `attrs`.
+* `layout` The layout is a list of strings and widgets that will be rendered. They are rendered in that exact order. String will be formatted using the dictionary `attrs`.
 
 ## Bugs or Suggestions
 
